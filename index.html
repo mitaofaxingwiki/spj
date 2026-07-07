@@ -7,104 +7,45 @@
   <style>
     body {
       font-family: 'Microsoft YaHei', sans-serif;
-      background: #0a0014 url('https://picsum.photos/id/1015/1920/1080') fixed center/cover;
+      background: #0a0014;
       color: #f0c0ff;
       margin: 0;
       padding: 0;
     }
     header {
-      background: linear-gradient(rgba(75, 0, 130, 0.85), rgba(156, 39, 176, 0.9));
-      padding: 120px 20px 140px;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), 
+                  url('https://i.imgur.com/crcOtts.jpeg') center/cover no-repeat;
+      padding: 160px 20px 180px;
       text-align: center;
+      background-attachment: fixed;
     }
     h1 {
-      font-size: 4.2rem;
+      font-size: 4.8rem;
       margin: 0;
-      text-shadow: 0 0 40px #ff66cc;
+      text-shadow: 0 0 50px #ff3399, 0 0 80px #000;
+      letter-spacing: 6px;
     }
     .subtitle {
-      font-size: 1.6rem;
-      margin-top: 20px;
+      font-size: 1.8rem;
+      margin-top: 25px;
+      text-shadow: 0 0 30px #000;
     }
     .container {
-      max-width: 1200px;
-      margin: -90px auto 40px;
+      max-width: 1280px;
+      margin: -110px auto 60px;
       padding: 0 20px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 28px;
     }
     .card {
-      background: rgba(30, 0, 60, 0.92);
-      border-radius: 18px;
+      background: rgba(25, 0, 50, 0.95);
+      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
       transition: 0.4s;
     }
     .card:hover {
-      transform: translateY(-12px);
-      box-shadow: 0 30px 60px rgba(255,102,204,0.3);
-    }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 24px;
-    }
-    h2 {
-      color: #ff99ff;
-      margin: 0 0 12px 0;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>性界大战</h1>
-    <p class="subtitle">官方资料站</p>
-  </header>
-
-  <div class="container">
-    <div class="grid">
-
-      <div class="card">
-        <img src="https://picsum.photos/id/1011/600/300" alt="角色">
-        <div class="card-content">
-          <h2>👤 角色图鉴</h2>
-          <p>精美立绘、技能、天赋、养成路线</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://picsum.photos/id/201/600/300" alt="装备">
-        <div class="card-content">
-          <h2>⚔️ 装备系统</h2>
-          <p>欲能器、饰品、宝石全图鉴</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://picsum.photos/id/133/600/300" alt="世界观">
-        <div class="card-content">
-          <h2>🌌 世界观</h2>
-          <p>绯界大陆与圣权会故事</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://picsum.photos/id/251/600/300" alt="攻略">
-        <div class="card-content">
-          <h2>🎮 攻略中心</h2>
-          <p>阵容推荐 & 活动攻略</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</body>
-</html>
+      transform: translate
