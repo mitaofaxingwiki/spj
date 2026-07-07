@@ -5,62 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>性界大战丨官方资料站</title>
   <style>
-    body { 
-      font-family: 'Microsoft YaHei', sans-serif; 
-      margin: 0; 
-      padding: 0; 
-      background: #f5f5f5; 
-      color: #333; 
+    body { font-family: 'Microsoft YaHei', sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+    .topbar { background: #2c003e; color: white; padding: 12px; text-align: center; font-size: 1.3rem; }
+    .top { 
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://i.imgur.com/crcOtts.jpeg') center/cover; 
+      color: white; padding: 80px 20px; text-align: center; 
     }
-    .topbar {
-      background: #2c003e;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 1.4rem;
+    .main { 
+      display: flex; 
+      max-width: 1400px; 
+      margin: 20px auto; 
+      gap: 20px; 
+      padding: 0 20px; 
     }
-    .top {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://i.imgur.com/crcOtts.jpeg') center/cover;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
+    .sidebar { 
+      width: 280px; 
+      background: white; 
+      padding: 20px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
     }
-    .main {
-      max-width: 1400px;
-      margin: 30px auto;
-      padding: 0 20px;
-      display: flex;
-      gap: 25px;
-    }
-    .sidebar {
-      width: 280px;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .content {
-      flex: 1;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    .content { 
+      flex: 1; 
+      background: white; 
+      padding: 25px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
     }
     h2 { color: #2c003e; border-bottom: 3px solid #9f2ed3; padding-bottom: 10px; }
-    .menu a {
-      display: block;
-      padding: 12px;
-      color: #2c003e;
-      text-decoration: none;
-      border-bottom: 1px solid #eee;
-    }
-    .card {
-      background: #f8f0ff;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 8px;
-      border-left: 5px solid #9f2ed3;
-    }
+    .menu a { display: block; padding: 10px 15px; color: #2c003e; text-decoration: none; border-bottom: 1px solid #eee; }
+    .menu a:hover { background: #f0e6ff; }
+    .card { background: #f8f0ff; padding: 18px; margin: 15px 0; border-radius: 8px; border-left: 5px solid #9f2ed3; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
   </style>
 </head>
 <body>
@@ -69,37 +45,54 @@
 
   <div class="top">
     <h1>性界大战</h1>
-    <p>官方资料站</p>
+    <p>最全攻略 · 角色 · 装备 · 世界观</p>
   </div>
 
   <div class="main">
+
     <!-- 左侧菜单 -->
     <div class="sidebar">
       <h3>攻略菜单</h3>
       <div class="menu">
-        <a href="#">🏠 首页</a>
-        <a href="#">👤 角色图鉴</a>
-        <a href="#">⚔️ 装备养成</a>
-        <a href="#">🌍 游戏世界观</a>
-        <a href="#">🎮 活动攻略</a>
-        <a href="#">📖 新手指南</a>
+        <a href="#">最新活动资讯</a>
+        <a href="#">角色图鉴</a>
+        <a href="#">装备养成</a>
+        <a href="#">游戏世界观</a>
+        <a href="#">新人攻略</a>
+        <a href="#">阵容推荐</a>
+        <a href="#">活动打法</a>
+        <a href="#">版本更新</a>
       </div>
     </div>
 
     <!-- 右侧内容 -->
     <div class="content">
-      <h2>🌌 游戏世界观</h2>
+      <h2>最新活动 & 资讯</h2>
+      <div class="grid">
+        <div class="card">新版本更新内容整理</div>
+        <div class="card">新角色上线预告</div>
+        <div class="card">当前限时活动奖励</div>
+      </div>
+
+      <h2>游戏世界观</h2>
       <div class="card">
-        <h3>游戏背景故事</h3>
-        <p>在欲望与权力的交织中，绯界大陆正面临前所未有的动荡……</p>
+        <h3>🌌 游戏背景故事</h3>
+        <p>欲望与权力的交织，绯界大陆的故事...</p>
       </div>
       <div class="card">
-        <h3>圣权会介绍</h3>
-        <p>掌控秩序的强大组织，拥有至高权威与神秘力量。</p>
+        <h3>🏛️ 圣权会介绍</h3>
+        <p>秩序的守护者，势力详解...</p>
       </div>
       <div class="card">
-        <h3>元素阵型</h3>
-        <p>水、风、火、暗、光五大元素体系与阵型搭配规则。</p>
+        <h3>✨ 元素阵型</h3>
+        <p>五大元素相性与阵型推荐...</p>
+      </div>
+
+      <h2>其他栏目（占位）</h2>
+      <div class="grid">
+        <div class="card">角色图鉴（待填充）</div>
+        <div class="card">装备攻略（待填充）</div>
+        <div class="card">活动打法（待填充）</div>
       </div>
     </div>
   </div>
