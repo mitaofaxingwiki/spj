@@ -9,24 +9,25 @@
       font-family: 'Microsoft YaHei', sans-serif;
       margin: 0;
       padding: 0;
-      color: #f0d0ff;
+      color: #fff;
       background: #0a0014;
     }
     header {
-      background: linear-gradient(rgba(10,0,25,0.5), rgba(20,0,45,0.7)), 
+      background: linear-gradient(rgba(10,0,25,0.25), rgba(20,0,45,0.4)), 
                   url('https://i.imgur.com/crcOtts.jpeg') center/cover no-repeat;
       padding: 160px 20px 140px;
       text-align: center;
       background-attachment: fixed;
     }
     h1 {
-      font-size: 4.5rem;
+      font-size: 4.6rem;
       margin: 0;
-      text-shadow: 0 0 50px #ff3399;
+      text-shadow: 3px 3px 15px #000, 0 0 40px #ff3399;
     }
     .subtitle {
-      font-size: 1.6rem;
-      margin-top: 20px;
+      font-size: 1.7rem;
+      margin-top: 25px;
+      text-shadow: 2px 2px 10px #000;
     }
     .container {
       max-width: 1100px;
@@ -35,17 +36,18 @@
     }
     h2 {
       text-align: center;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       color: #ff99ff;
       margin: 60px 0 40px 0;
+      text-shadow: 0 0 20px #000;
     }
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 24px;
+      gap: 26px;
     }
     .card {
-      background: rgba(35, 0, 70, 0.9);
+      background: rgba(45, 10, 85, 0.88);
       border-radius: 18px;
       padding: 32px;
       box-shadow: 0 15px 40px rgba(0,0,0,0.5);
@@ -53,15 +55,42 @@
     }
     .card:hover {
       transform: translateY(-8px);
-      background: rgba(50, 0, 90, 0.95);
+      background: rgba(60, 20, 100, 0.95);
     }
     .card h3 {
       color: #ffb3ff;
       margin: 0 0 18px 0;
-      font-size: 1.5rem;
+      font-size: 1.55rem;
     }
   </style>
 </head>
 <body>
 
-  <header
+  <header>
+    <h1>性界大战</h1>
+    <p class="subtitle">官方资料站</p>
+  </header>
+
+  <div class="container">
+    <h2>游戏世界观</h2>
+    
+    <div class="cards">
+      <div class="card">
+        <h3>🌌 游戏背景故事</h3>
+        <p>在欲望与权力的交织中，绯界大陆正面临前所未有的动荡……</p>
+      </div>
+
+      <div class="card">
+        <h3>🏛️ 圣权会介绍</h3>
+        <p>掌控秩序的强大组织，拥有至高无上的权威与神秘力量。</p>
+      </div>
+
+      <div class="card">
+        <h3>✨ 元素阵型</h3>
+        <p>水、风、火、暗、光等元素体系与战斗阵型搭配规则。</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
