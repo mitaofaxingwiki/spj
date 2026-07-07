@@ -5,76 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>性界大战｜官方WIKI</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
-    
     body {
-      font-family: 'Noto Sans SC', sans-serif;
-      background: #0f001a;
-      color: #e0b0ff;
+      font-family: 'Microsoft YaHei', sans-serif;
+      background: #0a0014 url('https://picsum.photos/id/1015/1920/1080') fixed center/cover;
+      color: #f0c0ff;
       margin: 0;
       padding: 0;
-      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/1920/1080?random=1');
-      background-size: cover;
-      background-attachment: fixed;
     }
     header {
-      background: linear-gradient(135deg, #4b0082, #9f2ed3);
-      padding: 100px 20px 120px;
+      background: linear-gradient(rgba(75, 0, 130, 0.85), rgba(156, 39, 176, 0.9));
+      padding: 120px 20px 140px;
       text-align: center;
-      position: relative;
     }
     h1 {
-      font-size: 4rem;
+      font-size: 4.2rem;
       margin: 0;
-      text-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
-      letter-spacing: 4px;
+      text-shadow: 0 0 40px #ff66cc;
     }
     .subtitle {
-      font-size: 1.5rem;
-      margin-top: 15px;
-      opacity: 0.95;
+      font-size: 1.6rem;
+      margin-top: 20px;
     }
     .container {
-      max-width: 1280px;
-      margin: -80px auto 0;
+      max-width: 1200px;
+      margin: -90px auto 40px;
       padding: 0 20px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 28px;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 25px;
     }
     .card {
       background: rgba(30, 0, 60, 0.92);
-      border: 1px solid #c026d3;
-      border-radius: 20px;
-      padding: 32px;
-      transition: all 0.4s ease;
-      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      transition: 0.4s;
     }
     .card:hover {
-      transform: translateY(-15px) scale(1.03);
-      box-shadow: 0 30px 60px rgba(192, 38, 211, 0.4);
-      border-color: #ff66cc;
+      transform: translateY(-12px);
+      box-shadow: 0 30px 60px rgba(255,102,204,0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 24px;
     }
     h2 {
       color: #ff99ff;
-      margin: 0 0 16px 0;
-      font-size: 1.8rem;
-    }
-    .tag {
-      display: inline-block;
-      background: #9f2ed3;
-      color: white;
-      font-size: 0.85rem;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-top: 12px;
-    }
-    footer {
-      text-align: center;
-      padding: 80px 20px 40px;
-      opacity: 0.75;
+      margin: 0 0 12px 0;
     }
   </style>
 </head>
@@ -82,43 +65,46 @@
 
   <header>
     <h1>性界大战</h1>
-    <p class="subtitle">官方资料站 · 欲望与权力的世界</p>
+    <p class="subtitle">官方资料站</p>
   </header>
 
   <div class="container">
     <div class="grid">
 
       <div class="card">
-        <h2>👤 角色图鉴</h2>
-        <p>精美立绘 + 技能解析 + 天赋 + 最佳阵容 + 养成路线</p>
-        <span class="tag">即将上线</span>
+        <img src="https://picsum.photos/id/1011/600/300" alt="角色">
+        <div class="card-content">
+          <h2>👤 角色图鉴</h2>
+          <p>精美立绘、技能、天赋、养成路线</p>
+        </div>
       </div>
 
       <div class="card">
-        <h2>⚔️ 装备系统</h2>
-        <p>欲能器、饰品、宝石、升星、套装效果全攻略</p>
-        <span class="tag">即将上线</span>
+        <img src="https://picsum.photos/id/201/600/300" alt="装备">
+        <div class="card-content">
+          <h2>⚔️ 装备系统</h2>
+          <p>欲能器、饰品、宝石全图鉴</p>
+        </div>
       </div>
 
       <div class="card">
-        <h2>🌌 世界观</h2>
-        <p>绯界大陆、圣权会、欲魔传说、完整剧情线</p>
-        <span class="tag">即将上线</span>
+        <img src="https://picsum.photos/id/133/600/300" alt="世界观">
+        <div class="card-content">
+          <h2>🌌 世界观</h2>
+          <p>绯界大陆与圣权会故事</p>
+        </div>
       </div>
 
       <div class="card">
-        <h2>🎮 攻略中心</h2>
-        <p>高阶阵容、新手教学、活动打法、隐藏机制</p>
-        <span class="tag">即将上线</span>
+        <img src="https://picsum.photos/id/251/600/300" alt="攻略">
+        <div class="card-content">
+          <h2>🎮 攻略中心</h2>
+          <p>阵容推荐 & 活动攻略</p>
+        </div>
       </div>
 
     </div>
   </div>
-
-  <footer>
-    © 2026 性界大战官方资料站 | 由 Grok 协助搭建<br>
-    欢迎玩家提供素材，一起打造最专业的游戏WIKI
-  </footer>
 
 </body>
 </html>
