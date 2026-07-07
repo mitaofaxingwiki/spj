@@ -7,32 +7,30 @@
   <style>
     body {
       font-family: 'Microsoft YaHei', sans-serif;
-      background: #0a0014;
-      color: #f0c0ff;
       margin: 0;
       padding: 0;
+      color: #ffe0ff;
     }
     header {
-      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), 
+      background: linear-gradient(rgba(20,0,40,0.4), rgba(20,0,40,0.65)), 
                   url('https://i.imgur.com/crcOtts.jpeg') center/cover no-repeat;
-      padding: 160px 20px 180px;
+      padding: 160px 20px 170px;
       text-align: center;
       background-attachment: fixed;
     }
     h1 {
       font-size: 4.8rem;
       margin: 0;
-      text-shadow: 0 0 50px #ff3399, 0 0 80px #000;
-      letter-spacing: 6px;
+      text-shadow: 0 0 40px #ff3399;
     }
     .subtitle {
-      font-size: 1.8rem;
-      margin-top: 25px;
-      text-shadow: 0 0 30px #000;
+      font-size: 1.7rem;
+      margin-top: 20px;
+      text-shadow: 0 0 25px #000;
     }
     .container {
       max-width: 1280px;
-      margin: -110px auto 60px;
+      margin: -100px auto 60px;
       padding: 0 20px;
     }
     .grid {
@@ -41,11 +39,83 @@
       gap: 28px;
     }
     .card {
-      background: rgba(25, 0, 50, 0.95);
+      background: rgba(35, 0, 70, 0.95);
       border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.7);
       transition: 0.4s;
     }
     .card:hover {
-      transform: translate
+      transform: translateY(-12px);
+    }
+    .card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 26px;
+    }
+    h2 {
+      color: #ff99ff;
+      margin: 0 0 15px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 80px 20px;
+      background: #0a0014;
+      color: #cc99ff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>性界大战</h1>
+    <p class="subtitle">官方资料站</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://picsum.photos/id/1011/800/300" alt="角色">
+        <div class="card-content">
+          <h2>👤 角色图鉴</h2>
+          <p>精美立绘、技能、天赋、养成路线</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/id/201/800/300" alt="装备">
+        <div class="card-content">
+          <h2>⚔️ 装备 & 养成</h2>
+          <p>欲能器、饰品、宝石全攻略</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/id/133/800/300" alt="世界观">
+        <div class="card-content">
+          <h2>🌌 世界观</h2>
+          <p>绯界大陆与圣权会故事</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/id/251/800/300" alt="攻略">
+        <div class="card-content">
+          <h2>🎮 攻略中心</h2>
+          <p>阵容推荐、活动打法、新手教学</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 性界大战官方WIKI | 由 Grok 协助搭建
+  </footer>
+
+</body>
+</html>
