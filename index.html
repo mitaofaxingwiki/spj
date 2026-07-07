@@ -13,8 +13,8 @@
       color: #fff; 
     }
     .top {
-      min-height: 620px;                 /* 大幅增加高度 */
-      background: url('https://i.imgur.com/crcOtts.jpeg') center/cover no-repeat;
+      height: 420px;                    /* 高度固定，只显示上半部分 */
+      background: url('https://i.imgur.com/crcOtts.jpeg') center top / cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -25,20 +25,20 @@
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.35);     /* 遮罩调得很轻 */
+      background: rgba(0,0,0,0.4);
     }
     h1, .subtitle {
       position: relative;
       z-index: 2;
     }
     h1 {
-      font-size: 4.5rem;
+      font-size: 4.2rem;
       margin: 0;
       text-shadow: 0 0 40px #000;
     }
     .subtitle {
-      font-size: 1.7rem;
-      margin-top: 20px;
+      font-size: 1.6rem;
+      margin-top: 15px;
     }
     .main {
       display: flex;
@@ -75,32 +75,4 @@
       padding: 22px;
       margin: 18px 0;
       border-radius: 10px;
-      border-left: 6px solid #9f2ed3;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="top">
-    <h1>性界大战</h1>
-    <p class="subtitle">官方资料站</p>
-  </div>
-
-  <div class="main">
-    <div class="sidebar">
-      <h3>📋 攻略菜单</h3>
-      <div class="menu">
-        <a href="#">🏠 首页</a>
-        <a href="#">👤 角色图鉴</a>
-        <a href="#">⚔️ 装备养成</a>
-        <a href="#">🌍 游戏世界观</a>
-        <a href="#">🎮 活动攻略</a>
-        <a href="#">📖 新手指南</a>
-      </div>
-    </div>
-
-    <div class="content">
-      <h2>🌌 游戏世界观</h2>
-      <div class="card">
-        <h3>游戏背景故事</h3>
-        <p>在欲望与权力的交织中，绯界大陆正面临前所未有的动荡
+      border-left: 6px solid #9f2
