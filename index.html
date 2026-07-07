@@ -5,39 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>性界大战丨官方资料站</title>
   <style>
-    body { 
-      font-family: 'Microsoft YaHei', sans-serif; 
-      margin: 0; 
-      background: #0a0014; 
-      color: #333; 
-    }
-    .header {
-      background: #2c003e;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 1.35rem;
+    body {
+      font-family: 'Microsoft YaHei', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f001a;
+      color: #fff;
     }
     .top {
-      height: 520px;                    /* 固定高度让图片显示完整 */
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.55)), 
-                  url('https://i.imgur.com/crcOtts.jpeg') center/cover no-repeat;
-      color: white;
+      height: 520px;
+      background: url('https://i.imgur.com/crcOtts.jpeg') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       position: relative;
     }
-    h1 { 
-      font-size: 4rem; 
-      margin: 0; 
-      text-shadow: 0 0 40px #000; 
+    .top::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.45);   /* 调低遮罩 */
+    }
+    h1, .subtitle {
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-size: 4.2rem;
+      margin: 0;
+      text-shadow: 0 0 30px #000;
     }
     .subtitle {
       font-size: 1.6rem;
       margin-top: 15px;
-      text-shadow: 0 0 20px #000;
     }
     .main {
       display: flex;
@@ -49,6 +50,7 @@
     .sidebar {
       width: 260px;
       background: white;
+      color: #333;
       padding: 25px;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -56,21 +58,63 @@
     .content {
       flex: 1;
       background: white;
+      color: #333;
       padding: 35px;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     .menu a {
       display: block;
-      padding: 14px 18px;
+      padding: 12px 15px;
       color: #2c003e;
       text-decoration: none;
-      border-bottom: 1px solid #f0e6ff;
     }
-    .menu a:hover { background: #f8f0ff; }
+    .menu a:hover { background: #f0e6ff; }
     .card {
       background: #f8f0ff;
       padding: 22px;
       margin: 18px 0;
       border-radius: 10px;
-      border-left:
+      border-left: 6px solid #9f2ed3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <h1>性界大战</h1>
+    <p class="subtitle">官方资料站</p>
+  </div>
+
+  <div class="main">
+    <div class="sidebar">
+      <h3>📋 攻略菜单</h3>
+      <div class="menu">
+        <a href="#">🏠 首页</a>
+        <a href="#">👤 角色图鉴</a>
+        <a href="#">⚔️ 装备养成</a>
+        <a href="#">🌍 游戏世界观</a>
+        <a href="#">🎮 活动攻略</a>
+        <a href="#">📖 新手指南</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>🌌 游戏世界观</h2>
+      <div class="card">
+        <h3>游戏背景故事</h3>
+        <p>在欲望与权力的交织中，绯界大陆正面临前所未有的动荡……</p>
+      </div>
+      <div class="card">
+        <h3>圣权会介绍</h3>
+        <p>掌控秩序的强大组织，拥有至高权威与神秘力量。</p>
+      </div>
+      <div class="card">
+        <h3>元素阵型</h3>
+        <p>水、风、火、暗、光五大元素体系与阵型搭配规则。</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
