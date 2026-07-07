@@ -1,8 +1,7 @@
 site_name: 性界大战 官方WIKI
-site_description: 《性界大战》官方资料站 - 角色、装备、攻略、活动全收录
-site_url: https://你的用户名.github.io/sex-realm-wiki/
-repo_name: sex-realm-wiki
-repo_url: https://github.com/你的用户名/sex-realm-wiki
+site_description: 《性界大战》官方资料站
+repo_name: spj
+repo_url: https://github.com/mitaofaxingwiki/spj
 
 theme:
   name: material
@@ -11,36 +10,12 @@ theme:
     - scheme: default
       primary: deep purple
       accent: pink
-      toggle:
-        icon: material/weather-sunny
-        name: 浅色模式
-    - scheme: slate
-      primary: deep purple
-      accent: pink
-      toggle:
-        icon: material/weather-night
-        name: 深色模式
   features:
-    - content.code.copy
     - navigation.tabs
     - navigation.sections
-    - navigation.top
-    - search.suggest
-    - toc.follow
-
-extra:
-  social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/你的服务器
-    - icon: fontawesome/brands/github
-      link: https://github.com/你的用户名/sex-realm-wiki
+    - content.code.copy
 
 nav:
   - 首页: index.md
   - 世界观: world.md
-  - 角色图鉴: characters/index.md
-  - 装备养成: equipment/index.md
-  - 玩法攻略: gameplay/index.md
-  - 活动中心: events/index.md
   - 新手手册: beginner.md
-  - 更新日志: changelog.md
